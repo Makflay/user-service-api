@@ -9,6 +9,7 @@
     "start": "node dist/index.js",
     "typecheck": "tsc --noEmit"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Makflay/user-service-api.git"
