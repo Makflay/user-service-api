@@ -4,3 +4,4 @@ dist
 .DS_Store
 coverage
 PROJECT_CONTEXT.md
+/src/generated/prisma
