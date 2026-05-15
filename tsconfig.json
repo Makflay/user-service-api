@@ -35,12 +35,12 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": false,
+    "resolveJsonModule": false
 
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force"
+    //"verbatimModuleSyntax": true,
+    //"isolatedModules": true,
+    //"noUncheckedSideEffectImports": true,
+    //"moduleDetection": "force"
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
