@@ -26,3 +26,9 @@ export const createUser = (data: {
     },
   });
 };
+
+export const findUserByEmailWithPassword = (email: string) => {
+  return prisma.user.findUnique({
+    where: { email },
+  });
+};
