@@ -1,8 +1,13 @@
 import { UserRole } from "../generated/prisma/enums";
 import type { RequestHandler } from "express";
+import type { UserIdParams } from "../types/route.params";
 import { AppError } from "../utils/app.error";
 
-export const requireAdminOrSelf: RequestHandler = (req, _res, next): void => {
+export const requireAdminOrSelf: RequestHandler<UserIdParams> = (
+  req,
+  _res,
+  next,
+): void => {
   if (!req.user) {
     next(new AppError("Unauthrized", 401));
     return;
